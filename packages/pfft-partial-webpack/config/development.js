@@ -1,10 +1,12 @@
 const merge        = require( 'webpack-merge' );
-const server       = require( '../config/server' );
+const server       = require( './server' );
 const commonConfig = require( './common' );
 
 
 const developmentConfig =
 {
+    devServer : server,
+
     devtool : 'cheap-eval-source-map',
 
     entry :

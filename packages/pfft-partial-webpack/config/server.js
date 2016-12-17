@@ -3,7 +3,7 @@ module.exports =
     host : '0.0.0.0',
     port : 3000,
 
-    contentBase : require( '../config/paths' ).public.split( '/' ).pop(),
+    contentBase : require( './paths' ).public.split( '/' ).pop(),
 
     quiet  : false,
     noInfo : false,

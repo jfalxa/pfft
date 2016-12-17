@@ -1,0 +1,19 @@
+{
+  "name": "pfft-preset-react",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "redux": "^3.6.0"
+  },
+  "dependencies": {
+    "pfft-partial-babel": "^0.0.1",
+    "pfft-partial-css": "^0.0.1",
+    "pfft-partial-eslint": "^0.0.1",
+    "pfft-partial-mocha": "^0.0.1",
+    "pfft-partial-webpack": "^0.0.1",
+    "react-hot-loader": "3.0.0-beta.6"
+  }
+}
