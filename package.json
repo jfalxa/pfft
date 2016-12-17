@@ -1,0 +1,10 @@
+{
+  "name": "pfft",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jfalxa <jfalxa.sta@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "2.0.0-beta.31"
+  }
+}
