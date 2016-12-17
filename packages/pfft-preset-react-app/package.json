@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -9,7 +9,7 @@
     "redux": "^3.6.0"
   },
   "dependencies": {
-    "pfft-partial-babel": "^0.0.2",
+    "pfft-partial-babel": "^0.0.5",
     "pfft-partial-css": "^0.0.2",
     "pfft-partial-eslint": "^0.0.1",
     "pfft-partial-mocha": "^0.0.1",
