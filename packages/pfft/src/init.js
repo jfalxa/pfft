@@ -20,11 +20,11 @@ module.exports = function init( preset, name )
 
     // init yarn and add preset
     spawn( 'yarn', ['init', '-y'] );
-    spawn( 'yarn', ['add', presetModule] );
+    spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // get package json of the project and the preset
-    const packageJSON          = require( './package.json' );
-    const { peerDependencies } = require( `${ presetModule }/package.json` );
+    const packageJSON          = require( `${ projectPath }/package.json` );
+    const { peerDependencies } = require( `${ projectPath }/node_modules/${ presetModule }/package.json` );
 
     // add dependencies to package.json
     merge( packageJSON, { dependencies : peerDependencies } );
