@@ -7,4 +7,4 @@ const { devServer } = developmentConfig;
 const compiler = webpack( developmentConfig );
 const server   = new webpackDevServer( compiler, devServer );
 
-server.listen();
+server.listen( server.port, server.host );
