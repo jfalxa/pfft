@@ -5,9 +5,6 @@ const cssConfig     = require( 'pfft-partial-css/config/development' );
 const babelConfig   = require( './babel' );
 
 
-const babelOptions = merge( babelConfig, { plugins : ['react-hot-loader/babel'] } );
-
-
 const developmentConfig =
 {
     entry :
@@ -27,7 +24,7 @@ const developmentConfig =
                 [
                     {
                         loader  : 'babel-loader',
-                        options : babelOptions
+                        options : merge( babelConfig, { plugins : ['react-hot-loader/babel'] } );
                     }
                 ]
             }
@@ -37,5 +34,3 @@ const developmentConfig =
 
 
 module.exports = merge.smart( developmentConfig, cssConfig, webpackConfig );
-
-console.log( JSON.stringify( module.exports, 0, '\n' ) );

@@ -29,6 +29,3 @@ const productionConfig =
 
 
 module.exports = merge.smart( productionConfig, cssConfig, webpackConfig );
-
-
-console.log( JSON.stringify( module.exports, 0, '\n' ) );
