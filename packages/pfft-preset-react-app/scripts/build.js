@@ -2,4 +2,5 @@ const webpack          = require( 'webpack' );
 const productionConfig = require( '../config/production' );
 
 
-webpack( productionConfig );
+webpack( productionConfig )
+    .run( ( err, stats ) => {} );
