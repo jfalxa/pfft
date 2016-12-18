@@ -14,7 +14,7 @@ module.exports =
     {
         path     : paths.dist,
         filename : 'bundle.js'
-    }
+    },
 
     resolve :
     {
@@ -27,7 +27,7 @@ module.exports =
         [
             {
                 test    : /\.json$/,
-                include : [paths.src]
+                include : [paths.src],
 
                 use :
                 [
@@ -39,7 +39,7 @@ module.exports =
 
             {
                 test    : /\.js$/,
-                include : [paths.src]
+                include : [paths.src],
 
                 use :
                 [

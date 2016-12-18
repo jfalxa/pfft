@@ -1,0 +1,14 @@
+{
+  "name": "pfft",
+  "version": "0.0.4",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "pfft": "index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "cross-spawn": "^5.0.1",
+    "lodash.merge": "^4.6.0"
+  }
+}

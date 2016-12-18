@@ -29,7 +29,15 @@ module.exports = function init( preset, name )
     merge( packageJSON, { dependencies : peerDependencies } );
 
     // add scripts to package.json
-    merge( packageJSON, { scripts : getScripts( presetModule ) } );
+    const scripts =
+    {
+        start : 'pfft-scripts start',
+        build : 'pfft-scripts build',
+        test  : 'pfft-scripts test',
+        lint  : 'pfft-scripts lint'
+    };
+
+    merge( packageJSON, { scripts } );
 
     updatePackage( projectPath, packageJSON );
 

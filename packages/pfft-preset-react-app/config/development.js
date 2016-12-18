@@ -1,4 +1,5 @@
 const merge         = require( 'webpack-merge' );
+const paths         = require( 'pfft-partial-webpack/config/paths' );
 const webpackConfig = require( 'pfft-partial-webpack/config/development' );
 const cssConfig     = require( 'pfft-partial-css/config/development' );
 const babelConfig   = require( './babel' );
@@ -20,7 +21,7 @@ const developmentConfig =
         [
             {
                 test    : /\.js$/,
-                include : [paths.src]
+                include : [paths.src],
 
                 use :
                 [
