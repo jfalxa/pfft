@@ -19,7 +19,7 @@ module.exports = function init( preset, name )
 
     // init yarn and add preset
     spawn( 'yarn', ['init', '-y'] );
-    spawn( 'yarn', ['add', '--dev', presetModule, 'pfft-scripts'] );
+    spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // get package json of the project and the preset
     const packageJSON          = require( `${ projectPath }/package.json` );
