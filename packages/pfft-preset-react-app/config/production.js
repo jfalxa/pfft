@@ -12,9 +12,7 @@ const productionConfig =
         rules :
         [
             {
-                test    : /\.js$/,
-                include : [paths.src],
-
+                test : /\.js$/,
                 use :
                 [
                     {

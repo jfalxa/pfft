@@ -27,7 +27,7 @@ module.exports =
         [
             {
                 test    : /\.json$/,
-                include : [paths.src],
+                exclude : [/node_modules/],
 
                 use :
                 [
@@ -39,7 +39,7 @@ module.exports =
 
             {
                 test    : /\.js$/,
-                include : [paths.src],
+                exclude : [/node_modules/],
 
                 use :
                 [
