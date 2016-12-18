@@ -24,7 +24,7 @@ const developmentConfig =
                 [
                     {
                         loader  : 'babel-loader',
-                        options : merge( babelConfig, { plugins : ['react-hot-loader/babel'] } );
+                        options : merge( babelConfig, { plugins : ['react-hot-loader/babel'] } )
                     }
                 ]
             }
