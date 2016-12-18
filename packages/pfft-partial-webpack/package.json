@@ -1,6 +1,6 @@
 {
   "name": "pfft-partial-webpack",
-  "version": "0.0.18",
+  "version": "0.0.21",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
