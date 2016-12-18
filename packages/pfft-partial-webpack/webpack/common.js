@@ -3,8 +3,6 @@ const paths = require( '../config/paths' );
 
 module.exports =
 {
-    context : paths.root,
-
     entry :
     [
         `${ paths.src }/index.js`
@@ -18,7 +16,13 @@ module.exports =
 
     resolve :
     {
-        extensions : ['.js', '.json']
+        extensions : ['.js', '.json'],
+
+        modules :
+        [
+            paths.root,
+            'node_modules'
+        ]
     },
 
     module :

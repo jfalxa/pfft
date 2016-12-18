@@ -53,5 +53,5 @@ const app = main();
 // hot reload
 if ( process.env.NODE_ENV === 'development' && module.hot )
 {
-    module.hot.accept( './routes.js', () => main( app ) } );
+    module.hot.accept( './routes.js', () => main( app ) );
 }
