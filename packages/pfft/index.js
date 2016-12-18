@@ -2,6 +2,7 @@
 const programm = require( 'commander' );
 const init     = require( './src/init' );
 const run      = require( './src/run' );
+const upgrade  = require( './src/upgrade' );
 
 
 programm.version( '1.0.0' )
@@ -14,6 +15,10 @@ programm.command( 'init <preset> [path]' )
 programm.command( 'run <script> [config]' )
     .description( 'execute the specified script of the current preset' )
     .action( run );
+
+programm.command( 'upgrade' )
+    .description( 'downloads the latest version of the current preset' )
+    .action( upgrade );
 
 
 module.exports = programm.parse( process.argv );
