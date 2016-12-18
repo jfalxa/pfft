@@ -28,16 +28,19 @@ module.exports = function init( preset, name )
 
     // add scripts to package.json
     merge( packageJSON, { scripts : getScripts( presetModule ) } );
-    updatePackage( projectPath, packageJSON );
 
     // add dependencies to package.json
     merge( packageJSON, { dependencies : peerDependencies } );
 
-    // install those dependencies
+    // write changes to disk
+    updatePackage( projectPath, packageJSON );
+
+    // install the dependencies
     spawn( 'yarn', ['install'] );
 
     // copy the preset template to the project
-    spawn( 'cp', ['-r', `${ presetPath }/template/*`, './'] );
+    spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
+    spawn( 'mv', ['gitignore', '.gitignore'] );
 
     // init a git repo and add the inital commit
     spawn( 'git', ['init'] );
