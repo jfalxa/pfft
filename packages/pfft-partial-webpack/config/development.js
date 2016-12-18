@@ -1,5 +1,4 @@
 const merge        = require( 'webpack-merge' );
-const paths        = require( './paths' );
 const server       = require( './server' );
 const commonConfig = require( './common' );
 
@@ -18,7 +17,6 @@ const developmentConfig =
 
     output :
     {
-        path       : `${ paths.public }/js`,
         publicPath : '/js/'
     }
 };
