@@ -1,6 +1,6 @@
 {
   "name": "pfft",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "main": "index.js",
   "license": "MIT",
   "bin": {
