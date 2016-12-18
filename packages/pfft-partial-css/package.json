@@ -1,6 +1,6 @@
 {
   "name": "pfft-partial-css",
-  "version": "0.0.24",
+  "version": "0.0.28",
   "main": "index.js",
   "license": "MIT"
 }
