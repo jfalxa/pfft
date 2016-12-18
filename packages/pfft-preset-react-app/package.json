@@ -6,7 +6,8 @@
   "peerDependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
   },
   "dependencies": {
     "babel-loader": "^6.2.10",
