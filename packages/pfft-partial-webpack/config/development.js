@@ -13,7 +13,12 @@ const developmentConfig =
     [
         `webpack-dev-server/client?http://${ server.host }:${ server.port }`,
         'webpack/hot/only-dev-server'
-    ]
+    ],
+
+    output :
+    {
+        publicPath : '/js'
+    }
 };
 
 
