@@ -1,6 +1,6 @@
 const webpack      = require( 'webpack' );
 const merge        = require( 'webpack-merge' );
-const server       = require( './server' );
+const server       = require( '../config/server' );
 const commonConfig = require( './common' );
 
 

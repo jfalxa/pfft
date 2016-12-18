@@ -1,8 +1,13 @@
 const merge         = require( 'webpack-merge' );
-const paths         = require( 'pfft-partial-webpack/config/paths' );
-const webpackConfig = require( 'pfft-partial-webpack/config/development' );
-const cssConfig     = require( 'pfft-partial-css/config/development' );
-const babelConfig   = require( './babel' );
+const webpackConfig = require( 'pfft-partial-webpack/webpack/development' );
+const cssConfig     = require( 'pfft-partial-css/webpack/development' );
+
+
+// add react hot loader to babel plugins
+const babelConfig = merge(
+    require( '../config/babel' ),
+    { plugins : ['react-hot-loader/babel'] }
+);
 
 
 const developmentConfig =
@@ -22,7 +27,7 @@ const developmentConfig =
                 [
                     {
                         loader  : 'babel-loader',
-                        options : merge( babelConfig, { plugins : ['react-hot-loader/babel'] } )
+                        options : babelConfig
                     }
                 ]
             }
