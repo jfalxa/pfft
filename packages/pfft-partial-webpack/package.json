@@ -7,7 +7,7 @@
     "babel-loader": "^6.2.10",
     "json-loader": "^0.5.4",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
+    "webpack-dev-server": "2.2.0-rc.0",
     "webpack-merge": "^1.1.1"
   }
 }
