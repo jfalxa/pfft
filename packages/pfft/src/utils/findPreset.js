@@ -9,7 +9,7 @@ module.exports = function findPreset()
     {
         if ( module.indexOf( 'pfft-preset-' ) === 0 )
         {
-            return module;
+            return path.resolve( `node_modules/${ module }` );
         }
     }
 
