@@ -7,7 +7,7 @@ const babelConfig   = require( './babel' );
 
 const babelOptions = merge( babelConfig, { plugins : ['react-hot-loader/babel'] } );
 
-console.log( babelOptions )
+
 const developmentConfig =
 {
     entry :
@@ -37,3 +37,5 @@ const developmentConfig =
 
 
 module.exports = merge.smart( developmentConfig, cssConfig, webpackConfig );
+
+console.log( JSON.stringify( module.exports, 0, '\n' ) );
