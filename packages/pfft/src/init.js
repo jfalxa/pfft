@@ -9,6 +9,7 @@ module.exports = function init( preset, name )
 {
     const presetModule = `pfft-preset-${ preset }`;
     const projectPath  = path.resolve( name || '.' );
+    const presetPath   = `${ projectPath }/node_modules/${ presetModule }`;
 
     // create project dir
     if ( name )
@@ -23,15 +24,18 @@ module.exports = function init( preset, name )
 
     // get package json of the project and the preset
     const packageJSON          = require( `${ projectPath }/package.json` );
-    const { peerDependencies } = require( `${ projectPath }/node_modules/${ presetModule }/package.json` );
+    const { peerDependencies } = require( `${ presetPath }/package.json` );
+
+    // add scripts to package.json
+    merge( packageJSON, { scripts : getScripts( presetModule ) } );
+    updatePackage( projectPath, packageJSON );
 
     // add dependencies to package.json
     merge( packageJSON, { dependencies : peerDependencies } );
 
-    // add scripts to package.json
-    merge( packageJSON, { scripts : getScripts( presetModule ) } );
-
-    updatePackage( projectPath, packageJSON );
-
+    // install those dependencies
     spawn( 'yarn', ['install'] );
+
+    // copy the preset template to the project
+    spawn( 'cp', ['-r', `${ presetPath }/template/*`, './'] );
 }
