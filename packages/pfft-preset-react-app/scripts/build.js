@@ -3,4 +3,8 @@
 const build            = require( 'pfft-partial-webpack/scripts/build' );
 const productionConfig = require( '../webpack/production' );
 
-build( productionConfig );
+
+module.exports = function buildReact()
+{
+    build( productionConfig );
+}

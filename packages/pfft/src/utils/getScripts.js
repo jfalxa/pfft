@@ -10,9 +10,8 @@ module.exports = function getScripts( module )
 
     for ( let i=0; i<scriptFiles.length; i++ )
     {
-        const scriptFile    = scriptFiles[i];
-        const scriptName    = scriptFile.replace( /\.[a-z]+$/, '' );
-        scripts[scriptName] = `./${ scriptPath }/${ scriptFile }`;
+        const script    = scriptFiles[i].replace( /\.[a-z]+$/, '' );
+        scripts[script] = `pfft run ${ script }`;
     }
 
     return scripts;
