@@ -9,6 +9,7 @@
     "redux": "^3.6.0"
   },
   "dependencies": {
+    "babel-preset-react": "^6.16.0",
     "pfft-partial-babel": "^0.0.13",
     "pfft-partial-css": "^0.0.2",
     "pfft-partial-eslint": "^0.0.1",
