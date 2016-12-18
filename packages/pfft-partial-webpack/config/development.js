@@ -1,3 +1,4 @@
+const webpack      = require( 'webpack' );
 const merge        = require( 'webpack-merge' );
 const server       = require( './server' );
 const commonConfig = require( './common' );
@@ -18,7 +19,12 @@ const developmentConfig =
     output :
     {
         publicPath : '/js/'
-    }
+    },
+
+    plugins :
+    [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
 
 
