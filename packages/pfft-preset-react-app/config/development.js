@@ -7,7 +7,7 @@ const babelConfig   = require( './babel' );
 
 const babelOptions = merge( babelConfig, { plugins : ['react-hot-loader/babel'] } );
 
-
+console.log( babelOptions )
 const developmentConfig =
 {
     entry :

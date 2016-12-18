@@ -19,7 +19,7 @@ const productionConfig =
                 [
                     {
                         loader  : 'babel-loader',
-                        options : babelOptions
+                        options : babelConfig
                     }
                 ]
             }
