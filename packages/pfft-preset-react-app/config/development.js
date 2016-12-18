@@ -31,4 +31,4 @@ const developmentConfig =
 }
 
 
-module.exports = merge.smart( developmentConfig, cssConfig, webpackConfig );
+module.exports = merge( developmentConfig, cssConfig, webpackConfig );

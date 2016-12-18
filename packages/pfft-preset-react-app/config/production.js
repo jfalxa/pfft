@@ -26,4 +26,4 @@ const productionConfig =
 };
 
 
-module.exports = merge.smart( productionConfig, cssConfig, webpackConfig );
+module.exports = merge( productionConfig, cssConfig, webpackConfig );
