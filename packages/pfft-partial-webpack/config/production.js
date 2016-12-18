@@ -1,10 +1,17 @@
 const webpack      = require( 'webpack' );
 const merge        = require( 'webpack-merge' );
+const paths        = require( './paths' );
 const commonConfig = require( './common' );
 
 
 const productionConfig =
 {
+    output :
+    {
+        path : paths.dist
+    },
+
+
     plugins :
     [
         new webpack.DefinePlugin( { 'process.env.NODE_ENV' : '"production"' } ),

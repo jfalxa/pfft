@@ -12,7 +12,6 @@ module.exports =
 
     output :
     {
-        path     : paths.dist,
         filename : 'bundle.js'
     },
 
