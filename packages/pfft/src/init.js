@@ -38,4 +38,9 @@ module.exports = function init( preset, name )
 
     // copy the preset template to the project
     spawn( 'cp', ['-r', `${ presetPath }/template/*`, './'] );
+
+    // init a git repo and add the inital commit
+    spawn( 'git', ['init'] );
+    spawn( 'git', ['add', '.'] );
+    spawn( 'git', ['commit', '-m', 'Initial commit'] );
 }

@@ -1,0 +1,12 @@
+# npm files
+node_modules
+npm-debug.log
+
+# yarn files
+yarn.lock
+
+# build results
+dist
+
+# coverage data
+coverage
