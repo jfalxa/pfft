@@ -1,6 +1,6 @@
-const webpack          = require( 'webpack' );
+#!/usr/bin/node
+
+const build            = require( 'pfft-partial-webpack/scripts/build' );
 const productionConfig = require( '../config/production' );
 
-
-webpack( productionConfig )
-    .run( ( err, stats ) => {} );
+build( productionConfig );
