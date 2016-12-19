@@ -19,7 +19,7 @@ const developmentConfig =
     output :
     {
         path       : server.contentBase,
-        publicPath : '/js/'
+        publicPath : server.publicPath
     },
 
     plugins :

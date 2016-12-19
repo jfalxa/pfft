@@ -1,5 +1,8 @@
-const precss       = require( 'precss' );
-const autoprefixer = require( 'autoprefixer' );
+const webpack           = require( 'webpack' );
+const precss            = require( 'precss' );
+const cssnano           = require( 'cssnano' );
+const autoprefixer      = require( 'autoprefixer' );
+const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
 
 
 module.exports =
@@ -18,31 +21,27 @@ module.exports =
                     [
                         {
                             loader : 'css-loader',
-                            options :
+
+                            query :
                             {
                                 modules        : true,
+                                minimize       : true,
                                 camelCase      : true,
                                 importLoaders  : 1,
-                                localIdentName : '[path]_[name]_[local]_[hash:base64:5]'
+                                localIdentName : '[local]'
                             }
                         },
 
-                        {
-                            loader : 'postcss-loader',
-                            options :
-                            {
-                                plugins : [precss, autoprefixer]
-                            }
-                        }
+                        'postcss-loader'
                     ]
                 } )
             }
         ]
     },
 
-
     plugins :
     [
+        new webpack.LoaderOptionsPlugin( { options : { postcss : [precss, autoprefixer] } } ),
         new ExtractTextPlugin( 'style.css' )
     ]
 };

@@ -1,4 +1,5 @@
-const precss = require( 'precss' );
+const webpack = require( 'webpack' );
+const precss  = require( 'precss' );
 
 
 module.exports =
@@ -20,19 +21,18 @@ module.exports =
                             modules        : true,
                             camelCase      : true,
                             importLoaders  : 1,
-                            localIdentName : '[path]_[name]_[local]_[hash:base64:5]'
+                            localIdentName : '[name]_[local]_[hash:base64:5]'
                         }
                     },
 
-                    {
-                        loader : 'postcss-loader',
-                        options :
-                        {
-                            plugins : [precss]
-                        }
-                    }
+                    'postcss-loader',
                 ]
             }
         ]
     },
+
+    plugins :
+    [
+        new webpack.LoaderOptionsPlugin( { options : { postcss : [precss] } } )
+    ]
 };
