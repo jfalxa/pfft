@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -18,7 +18,7 @@
     "pfft-partial-css": "^0.0.28",
     "pfft-partial-eslint": "^0.0.1",
     "pfft-partial-mocha": "^0.0.1",
-    "pfft-partial-webpack": "^0.0.41",
+    "pfft-partial-webpack": "^0.0.42",
     "react-hot-loader": "3.0.0-beta.6",
     "webpack-merge": "^1.1.1"
   }
