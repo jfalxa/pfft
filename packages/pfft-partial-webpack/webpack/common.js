@@ -4,7 +4,7 @@ const paths = require( '../config/paths' );
 module.exports =
 {
     context : paths.root,
-    
+
     entry :
     [
         `${ paths.src }/index.js`
@@ -32,14 +32,8 @@ module.exports =
         [
             {
                 test    : /\.json$/,
-                exclude : [/node_modules/],
-
-                use :
-                [
-                    {
-                        loader : 'json-loader'
-                    }
-                ]
+                include : paths.src,
+                loader  : 'json-loader'
             }
         ]
     }

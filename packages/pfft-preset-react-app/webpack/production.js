@@ -11,7 +11,9 @@ const productionConfig =
         rules :
         [
             {
-                test : /\.js$/,
+                test    : /\.js$/,
+                exclude : /node_modules/,
+
                 use :
                 [
                     {
