@@ -1,10 +1,13 @@
+const paths = require( 'path' );
+
+
 module.exports =
 {
     host : '0.0.0.0',
     port : 3000,
 
-    publicPath  : 'http://0.0.0.0:3000/js/',
-    contentBase : require( './paths' ).public.split( '/' ).pop(),
+    publicPath  : '/js/',
+    contentBase : paths.public,
 
     quiet  : false,
     noInfo : false,

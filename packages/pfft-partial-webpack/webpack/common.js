@@ -10,8 +10,7 @@ module.exports =
 
     output :
     {
-        filename : 'bundle.js',
-        path     : paths.dist
+        filename : 'bundle.js'
     },
 
     resolve :

@@ -1,14 +1,11 @@
 import React from 'react';
 
 
-export default class App extends React.Component
+export default function App( props )
 {
-    render()
-    {
-        return (
+    return (
 
-            <h1>Salut</h1>
+        <h1>Salut</h1>
 
-        );
-    }
+    );
 }
