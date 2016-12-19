@@ -22,10 +22,10 @@ module.exports = function init( preset, name )
     spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // include the preset scripts in the new project
-    addScripts( projectPath, preset );
+    addScripts( projectPath, presetModule );
 
     // and link the peer dependencies
-    addDependencies( projectPath, preset );
+    addDependencies( projectPath, presetModule );
 
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
