@@ -15,5 +15,5 @@ module.exports = function addScripts( path, preset )
     }
 
     // add scripts to package.json
-    updatePackage( projectPath, { scripts } );
+    updatePackage( path, { scripts : scripts } );
 }
