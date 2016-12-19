@@ -1,11 +1,18 @@
-const fs = require( 'fs' );
+const fs    = require( 'fs' );
+const merge = require( 'lodash.merge' );
 
 
-module.exports = function udpatePackageJson( path, packageJson )
+module.exports = function udpatePackageJSON( path, update )
 {
+    const packagePath = `${ path }/package.json`;
+
+    // get the current package.json and apply the update
+    const packageJSON        = require( packagePath );
+    const updatedPackageJSON = merge( packageJSON, update );
+
     // preprare the package.json contents
-    const packageJsonStr = JSON.stringify( packageJson, null, '  ' );
+    const packageJSONStr = JSON.stringify( updatedPackageJSON, null, '  ' );
 
     // and write them in the file
-    fs.writeFileSync( `${ path }/package.json`, packageJsonStr );
+    fs.writeFileSync( packagePath, packageJSONStr );
 }

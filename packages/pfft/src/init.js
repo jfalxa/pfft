@@ -1,8 +1,7 @@
-const path          = require( 'path' );
-const merge         = require( 'lodash.merge' );
-const spawn         = require( './utils/spawn' );
-const getScripts    = require( './utils/getScripts' );
-const updatePackage = require( './utils/updatePackage' );
+const path            = require( 'path' );
+const spawn           = require( './utils/spawn' );
+const addScripts      = require( './utils/addScripts' );
+const addDependencies = require( './utils/addDependencies' );
 
 
 module.exports = function init( preset, name )
@@ -22,21 +21,11 @@ module.exports = function init( preset, name )
     spawn( 'yarn', ['init', '-y'] );
     spawn( 'yarn', ['add', '--dev', presetModule] );
 
-    // get package json of the project and the preset
-    const packageJSON          = require( `${ projectPath }/package.json` );
-    const { peerDependencies } = require( `${ presetPath }/package.json` );
+    // include the preset scripts in the new project
+    addScripts( projectPath, preset );
 
-    // add scripts to package.json
-    merge( packageJSON, { scripts : getScripts( presetModule ) } );
-
-    // add dependencies to package.json
-    merge( packageJSON, { dependencies : peerDependencies } );
-
-    // write changes to disk
-    updatePackage( projectPath, packageJSON );
-
-    // install the dependencies
-    spawn( 'yarn', ['install'] );
+    // and link the peer dependencies
+    addDependencies( projectPath, preset );
 
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
