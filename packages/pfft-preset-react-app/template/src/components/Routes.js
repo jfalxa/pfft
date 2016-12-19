@@ -9,7 +9,7 @@ export default function Routes()
     return (
 
         <BrowserRouter>
-            <Match path="/" component={ App } />
+            <Match pattern="/" component={ App } />
         </BrowserRouter>
 
     );
