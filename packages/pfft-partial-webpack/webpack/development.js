@@ -18,7 +18,7 @@ const developmentConfig =
 
     output :
     {
-        path       : `${ server.contentBase }/js`
+        path       : server.contentBase,
         publicPath : '/js/'
     },
 

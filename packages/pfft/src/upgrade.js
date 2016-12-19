@@ -6,4 +6,6 @@ module.exports = function upgrade()
 {
     const preset = findPreset();
     spawn( 'yarn', ['upgrade', preset] );
+
+    // @TODO reinstall peerDependencies
 };

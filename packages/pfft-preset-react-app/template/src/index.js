@@ -1,11 +1,10 @@
 import React              from 'react';
 import { render }         from 'react-dom';
-import { Provider }       from 'react-redux';
 import { AppContainer }   from 'react-hot-loader';
 
-import createStore from 'src/services/store';
 import reducers    from 'src/reducers';
-import Routes      from 'src/routes';
+import createStore from 'src/services/store';
+import Root        from 'src/components/Root';
 
 
 // -------------------------------------------------------------------------- //
@@ -27,9 +26,7 @@ export default function main( app=initApp() )
     const content =
     (
         <AppContainer>
-            <Provider store={ app.store }>
-                <Routes />
-            </Provider>
+            <Root store={ app.store } />
         </AppContainer>
     );
 
@@ -51,5 +48,5 @@ const app = main();
 // hot reload
 if ( process.env.NODE_ENV === 'development' && module.hot )
 {
-    module.hot.accept( './components/Routes.js', () => main( app ) );
+    module.hot.accept( 'src/components/Root', () => main( app ) );
 }
