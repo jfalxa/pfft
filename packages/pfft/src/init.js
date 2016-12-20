@@ -1,7 +1,6 @@
-const path            = require( 'path' );
-const spawn           = require( './utils/spawn' );
-const addScripts      = require( './utils/addScripts' );
-const addDependencies = require( './utils/addDependencies' );
+const path       = require( 'path' );
+const spawn      = require( './utils/spawn' );
+const addScripts = require( './utils/addScripts' );
 
 
 module.exports = function init( preset, name )
@@ -21,15 +20,12 @@ module.exports = function init( preset, name )
     spawn( 'yarn', ['init', '-y'] );
     spawn( 'yarn', ['add', '--dev', presetModule] );
 
-    // include the preset scripts in the new project
-    addScripts( projectPath, presetModule );
-
-    // and link the peer dependencies
-    addDependencies( projectPath, presetModule );
-
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
     spawn( 'mv', ['gitignore', '.gitignore'] );
+
+    // include the preset scripts in the new project
+    addScripts( projectPath, presetModule );
 
     // init a git repo and add the inital commit
     spawn( 'git', ['init'] );

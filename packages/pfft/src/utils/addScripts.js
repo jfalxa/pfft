@@ -10,7 +10,7 @@ module.exports = function addScripts( path, preset )
 
     for ( let i=0; i<scriptFiles.length; i++ )
     {
-        const script    = scriptFiles[i].replace( /\.[a-z]+$/, '' );
+        const script    = scriptFiles[i].replace( /\.sh$/, '' );
         scripts[script] = `pfft run ${ script }`;
     }
 

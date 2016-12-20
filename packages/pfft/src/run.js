@@ -1,12 +1,12 @@
 const path       = require( 'path' );
+const spawn      = require( './utils/spawn' );
 const findPreset = require( './utils/findPreset' );
 
 
 module.exports = function run( script, config )
 {
     const preset     = findPreset();
-    const scriptPath = path.resolve( `node_modules/${ preset }/scripts/${ script }` );
-    const runScript  = require( scriptPath );
+    const scriptPath = path.resolve( `node_modules/${ preset }/scripts/${ script }.sh` );
 
-    return runScript();
+    return spawn( 'sh', [scriptPath] );
 }
