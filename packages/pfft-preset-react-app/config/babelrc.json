@@ -1,0 +1,13 @@
+{
+    "extends" : "../../pfft-partial-babel/babelrc.json",
+
+    "presets" : ["react"],
+
+    "env" :
+    {
+        "development" :
+        {
+            "plugins" : ["react-hot-loader/babel"]
+        }
+    }
+}
