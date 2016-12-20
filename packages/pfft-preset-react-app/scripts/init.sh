@@ -4,7 +4,7 @@
 yarn add \
     react \
     react-dom \
-    react-router \
+    react-router@next \
     react-redux \
     redux \
     redux-thunk
