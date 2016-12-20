@@ -1,5 +1,5 @@
-require( 'babel/register' );
 require( '../utils/globals' );
+require( 'babel/register' )( require( '../config/babel' ) );
 
 const Mocha         = require( 'mocha' );
 const listSpecs     = require( '../utils/listSpecs' );
