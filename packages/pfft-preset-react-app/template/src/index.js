@@ -1,6 +1,5 @@
-import React              from 'react';
-import { render }         from 'react-dom';
-import { AppContainer }   from 'react-hot-loader';
+import React      from 'react';
+import { render } from 'react-dom';
 
 import reducers    from 'src/reducers';
 import createStore from 'src/services/store';
@@ -22,16 +21,8 @@ function initApp()
 
 export default function main( app=initApp() )
 {
-    // define rendered element
-    const content =
-    (
-        <AppContainer>
-            <Root store={ app.store } />
-        </AppContainer>
-    );
-
-    // render it in its container
-    render( content, app.container );
+    // render  the Root element it in its container
+    render( <Root store={ app.store } />, app.container );
 
     // return the current config in order to reuse it when there's a hot reload
     return app;
