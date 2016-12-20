@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
