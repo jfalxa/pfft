@@ -9,9 +9,9 @@
     [
         [
             "module-resolver",
-            [
+            {
                 "root" : ["."]
-            ]
+            }
         ]
     ]
 }
