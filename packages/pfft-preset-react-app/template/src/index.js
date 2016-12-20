@@ -37,7 +37,7 @@ export default function main( app=initApp() )
 const app = main();
 
 // hot reload
-if ( process.env.NODE_ENV === 'development' && module.hot )
+if ( module.hot )
 {
-    module.hot.accept( 'src/components/Root', () => main( app ) );
+    module.hot.accept( 'src/components/Root/Root.dev', () => main( app ) );
 }
