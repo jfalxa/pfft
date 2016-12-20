@@ -24,7 +24,7 @@ const developmentConfig =
                         loader : 'babel-loader',
                         options :
                         {
-                            cacheDirectory : true
+                            cacheDirectory : true,
                             plugins        : ['react-hot-loader/babel']
                         }
                     }
