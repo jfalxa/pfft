@@ -10,8 +10,13 @@ module.exports = function addScripts( path, preset )
 
     for ( let i=0; i<scriptFiles.length; i++ )
     {
-        const script    = scriptFiles[i].replace( /\.sh$/, '' );
-        scripts[script] = `pfft run ${ script }`;
+        const script = scriptFiles[i].replace( /\.sh$/, '' );
+
+        // ignore the init script which is reserved for pfft init
+        if ( script !== 'init' )
+        {
+            scripts[script] = `pfft run ${ script }`;
+        }
     }
 
     // add scripts to package.json

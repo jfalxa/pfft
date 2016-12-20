@@ -1,5 +1,5 @@
 const merge        = require( 'webpack-merge' );
-const eslintConfig = require( 'pfft-partial-eslint' );
+const eslintConfig = require( 'pfft-partial-eslint/eslintrc' );
 
 
 const reactEslintConfig =
