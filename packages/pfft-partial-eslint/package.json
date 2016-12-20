@@ -1,6 +1,6 @@
 {
   "name": "pfft-partial-eslint",
-  "version": "0.0.1",
+  "version": "0.0.50",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
