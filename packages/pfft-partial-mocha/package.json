@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-istanbul": "^3.0.0",
     "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "glob": "^7.1.1",
+    "isparta": "^4.0.0",
     "istanbul": "^0.4.5",
+    "jsdom": "^9.9.1",
+    "jsdom-global": "^2.1.0",
     "mocha": "^3.2.0",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0"

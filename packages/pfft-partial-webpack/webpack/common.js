@@ -21,7 +21,6 @@ module.exports =
 
         modules :
         [
-            paths.root,
             'node_modules'
         ]
     },
