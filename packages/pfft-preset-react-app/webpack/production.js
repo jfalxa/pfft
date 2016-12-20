@@ -1,7 +1,6 @@
 const merge         = require( 'webpack-merge' );
 const webpackConfig = require( 'pfft-partial-webpack/webpack/production' );
 const cssConfig     = require( 'pfft-partial-css/webpack/production' );
-const babelConfig   = require( '../config/babel' );
 
 
 const productionConfig =
@@ -18,7 +17,7 @@ const productionConfig =
                 [
                     {
                         loader  : 'babel-loader',
-                        options : babelConfig
+                        options : { cacheDirectory : true }
                     }
                 ]
             }

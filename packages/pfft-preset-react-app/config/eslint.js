@@ -21,7 +21,7 @@ const reactEslintConfig =
     [
         "plugin:react/recommended"
     ]
-}
+};
 
 
 module.exports = merge( eslintConfig, reactEslintConfig );
