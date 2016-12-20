@@ -16,13 +16,13 @@ module.exports = function init( preset, name )
         process.chdir( projectPath );
     }
 
-    // init yarn and add preset
-    spawn( 'yarn', ['init', '-y'] );
-    spawn( 'yarn', ['add', '--dev', presetModule] );
-
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
     spawn( 'mv', ['gitignore', '.gitignore'] );
+
+    // init yarn and add preset
+    spawn( 'yarn', ['init', '-y'] );
+    spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // include the preset scripts in the new project
     addScripts( projectPath, presetModule );
