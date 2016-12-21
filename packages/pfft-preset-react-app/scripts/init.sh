@@ -7,4 +7,5 @@ yarn add \
     react-router@next \
     react-redux \
     redux \
-    redux-thunk
+    redux-thunk \
+    lodash

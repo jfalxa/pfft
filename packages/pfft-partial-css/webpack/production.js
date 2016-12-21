@@ -41,7 +41,9 @@ module.exports =
 
     plugins :
     [
-        new webpack.LoaderOptionsPlugin( { options : { postcss : [precss, autoprefixer] } } ),
-        new ExtractTextPlugin( 'style.css' )
+        new ExtractTextPlugin( '../css/style.css' ),
+        new webpack.LoaderOptionsPlugin( {
+            options : { postcss : [precss, autoprefixer] }
+        } )
     ]
 };

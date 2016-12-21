@@ -6,13 +6,19 @@ module.exports =
     context : paths.root,
 
     entry :
-    [
-        `${ paths.src }/index.js`
-    ],
+    {
+        vendor : [],
+
+        app :
+        [
+            `${ paths.src }/index.js`
+        ]
+    },
 
     output :
     {
-        filename : 'bundle.js'
+        filename : 'bundle.js',
+        path     : `${ paths.public }/js`
     },
 
     resolve :
@@ -36,5 +42,13 @@ module.exports =
                 loader  : 'json-loader'
             }
         ]
-    }
+    },
+
+    plugins :
+    [
+        new webpack.optimize.CommonChunkPlugin( {
+            name     : 'vendor',
+            filename : 'vendor.js'
+        } )
+    ]
 };

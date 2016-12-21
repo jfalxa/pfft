@@ -1,14 +1,16 @@
 const merge         = require( 'webpack-merge' );
 const webpackConfig = require( 'pfft-partial-webpack/webpack/development' );
 const cssConfig     = require( 'pfft-partial-css/webpack/development' );
+const vendor        = require( '../config/vendor' );
 
 
 const developmentConfig =
 {
     entry :
-    [
-        'react-hot-loader/patch'
-    ],
+    {
+        app    : ['react-hot-loader/patch'],
+        vendor : vendor
+    },
 
     module :
     {

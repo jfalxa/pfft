@@ -11,14 +11,16 @@ const developmentConfig =
     devtool : 'cheap-eval-source-map',
 
     entry :
-    [
-        `webpack-dev-server/client?http://${ server.host }:${ server.port }`,
-        'webpack/hot/only-dev-server'
-    ],
+    {
+        app :
+        [
+            `webpack-dev-server/client?http://${ server.host }:${ server.port }`,
+            'webpack/hot/only-dev-server'
+        ]
+    },
 
     output :
     {
-        path       : server.contentBase,
         publicPath : server.publicPath
     },
 

@@ -25,7 +25,7 @@ module.exports =
                         }
                     },
 
-                    'postcss-loader',
+                    'postcss-loader'
                 ]
             }
         ]
@@ -33,6 +33,8 @@ module.exports =
 
     plugins :
     [
-        new webpack.LoaderOptionsPlugin( { options : { postcss : [precss] } } )
+        new webpack.LoaderOptionsPlugin( {
+            options : { postcss : [precss] }
+        } )
     ]
 };

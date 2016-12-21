@@ -6,14 +6,11 @@ const commonConfig = require( './common' );
 
 const productionConfig =
 {
-    output :
-    {
-        path : paths.dist
-    },
-
     plugins :
     [
-        new webpack.optimize.UglifyJsPlugin( { compress : { warnings : false } } ),
+        new webpack.optimize.UglifyJsPlugin( {
+            compress : { warnings : false }
+        } )
     ]
 };
 
