@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-webpack_dev_server="./node_modules/pfft-partial-webpack/node_modules/.bin/webpack-dev-server"
+start="./node_modules/pfft-partial-webpack/scripts/start.sh"
 dev_config="./node_modules/pfft-preset-react-app/webpack/development.js"
 
-# start dev server
-$webpack_dev_server --config $dev_config
+# srart dev server
+$start --config $dev_config
