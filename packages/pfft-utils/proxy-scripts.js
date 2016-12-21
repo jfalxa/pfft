@@ -16,7 +16,7 @@ module.exports = function proxyScripts( preset, argv )
         const presetPath = path.resolve( `node_modules/pfft-preset-${ preset }` );
         const scriptFile = `${ presetPath }/scripts/${ script }.sh`;
 
-        return spawn( 'sh', [scriptFile].concat( options ) );
+        return spawn( 'sh', [scriptFile].concat( options ), { stdio : 'inherit' } );
     }
 
     return programm
