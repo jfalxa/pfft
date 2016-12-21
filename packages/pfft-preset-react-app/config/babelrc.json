@@ -1,4 +1,0 @@
-{
-    "extends" : "../../pfft-partial-babel/babelrc.json",
-    "presets" : ["react"]
-}

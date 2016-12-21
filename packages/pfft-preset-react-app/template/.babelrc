@@ -1,3 +1,7 @@
 {
-    "extends" : "./node_modules/pfft-preset-react-app/config/babelrc.json"
+    "presets" :
+    [
+        "pfft-partial-babel/config/babelrc.js",
+        "pfft-preset-react-app/config/babelrc.js"
+    ]
 }
