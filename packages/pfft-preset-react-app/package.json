@@ -1,10 +1,10 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "react-app": "./config/scripts.js" 
+    "react-app": "./config/scripts.js"
   },
   "dependencies": {
     "babel-loader": "^6.2.10",
