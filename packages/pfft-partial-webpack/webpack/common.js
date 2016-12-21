@@ -1,4 +1,5 @@
-const paths = require( '../config/paths' );
+const webpack = require( 'webpack' );
+const paths   = require( '../config/paths' );
 
 
 module.exports =
@@ -7,8 +8,6 @@ module.exports =
 
     entry :
     {
-        vendor : [],
-
         app :
         [
             `${ paths.src }/index.js`
@@ -46,7 +45,7 @@ module.exports =
 
     plugins :
     [
-        new webpack.optimize.CommonChunkPlugin( {
+        new webpack.optimize.CommonsChunkPlugin( {
             name     : 'vendor',
             filename : 'vendor.js'
         } )

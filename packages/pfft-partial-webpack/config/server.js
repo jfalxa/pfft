@@ -9,10 +9,9 @@ module.exports =
     publicPath  : '/js/',
     contentBase : paths.public,
 
+    hot    : true,
     quiet  : false,
     noInfo : false,
-    inline : true,
-    hot    : true,
 
     historyApiFallback : true,
 
@@ -22,8 +21,8 @@ module.exports =
         assets       : false,
         version      : false,
         hash         : false,
-        timings      : false,
-        chunks       : false,
+        timings      : true,
+        chunks       : true,
         chunkModules : false
     }
 };
