@@ -10,6 +10,11 @@ const developmentConfig =
 
     devtool : 'cheap-eval-source-map',
 
+    performance :
+    {
+        hints : false
+    },
+
     entry :
     {
         app :
