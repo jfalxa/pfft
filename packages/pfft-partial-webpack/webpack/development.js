@@ -8,7 +8,7 @@ const developmentConfig =
 {
     devServer : server,
 
-    devtool : 'cheap-eval-source-map',
+    devtool : 'eval-cheap-module-source-map',
 
     performance :
     {
