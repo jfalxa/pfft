@@ -3,6 +3,9 @@
   "version": "0.3.1",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "react-app": "./config/scripts.js" 
+  },
   "dependencies": {
     "babel-loader": "^6.2.10",
     "babel-preset-react": "^6.16.0",

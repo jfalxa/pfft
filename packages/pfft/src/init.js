@@ -3,22 +3,21 @@ const spawn      = require( './utils/spawn' );
 const addScripts = require( './utils/addScripts' );
 
 
-module.exports = function init( preset, name )
+module.exports = function init( preset, target )
 {
-    const presetModule = `pfft-preset-${ preset }`;
-    const projectPath  = path.resolve( name || '.' );
+    const projectPath  = path.resolve( target || '.' );
     const presetPath   = `${ projectPath }/node_modules/${ presetModule }`;
 
     // create project dir
-    if ( name )
+    if ( target )
     {
-        spawn( 'mkdir', ['-p', name] );
+        spawn( 'mkdir', ['-p', target] );
         process.chdir( projectPath );
     }
 
     // init yarn and add preset
     spawn( 'yarn', ['init', '-y'] );
-    spawn( 'yarn', ['add', '--dev', presetModule] );
+    spawn( 'yarn', ['add', '--dev', `pfft-preset-${ preset }`] );
 
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
@@ -28,7 +27,7 @@ module.exports = function init( preset, name )
     spawn( 'sh', [`${ presetPath }/scripts/init.sh`] );
 
     // include the preset scripts in the new project
-    addScripts( projectPath, presetModule );
+    addScripts( projectPath, preset );
 
     // init a git repo and add the inital commit
     spawn( 'git', ['init'] );

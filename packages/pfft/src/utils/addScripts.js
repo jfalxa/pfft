@@ -2,10 +2,10 @@ const fs            = require( 'fs' );
 const updatePackage = require( './updatePackage' );
 
 
-module.exports = function addScripts( path, preset )
+module.exports = function addScripts( projectPath, preset )
 {
     const scripts     = {};
-    const scriptPath  = `${ path }/node_modules/${ preset }/scripts`;
+    const scriptPath  = `${ projectPath }/node_modules/pfft-preset-${ preset }/scripts`;
     const scriptFiles = fs.readdirSync( scriptPath );
 
     for ( let i=0; i<scriptFiles.length; i++ )
@@ -15,10 +15,10 @@ module.exports = function addScripts( path, preset )
         // ignore the init script which is reserved for pfft init
         if ( script !== 'init' )
         {
-            scripts[script] = `pfft run ${ script }`;
+            scripts[script] = `${ preset } ${ script }`;
         }
     }
 
     // add scripts to package.json
-    updatePackage( path, { moduleRoots : ['.'], scripts : scripts } );
+    updatePackage( projectPath, { scripts : scripts } );
 }
