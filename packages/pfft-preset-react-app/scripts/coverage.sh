@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cross_env="./node_modules/pfft-preset-react-app/node_modules/.bin/cross-env"
+coverage="sh ./node_modules/pfft-partial-ava/scripts/coverage.sh"
 
-# run tests with coverage
-$cross_env NODE_ENV=test
+# run tests
+$coverage $@

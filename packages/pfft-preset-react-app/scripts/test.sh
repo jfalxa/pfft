@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cross_env="./node_modules/pfft-preset-react-app/node_modules/.bin/cross-env"
+test="sh ./node_modules/pfft-partial-ava/scripts/test.sh"
 
 # run tests
-$cross_env NODE_ENV=test
+$test $@

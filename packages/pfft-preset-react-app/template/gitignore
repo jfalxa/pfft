@@ -4,6 +4,7 @@ npm-debug.log
 
 # coverage reports
 coverage
+.nyc_output
 
 # yarn files
 yarn.lock
