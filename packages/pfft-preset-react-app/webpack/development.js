@@ -1,36 +1,16 @@
-const merge         = require( 'webpack-merge' );
-const webpackConfig = require( 'pfft-partial-webpack/webpack/development' );
-const cssConfig     = require( 'pfft-partial-css/webpack/development' );
-const vendor        = require( '../config/vendor' );
+const merge  = require( 'webpack-merge' );
+const base   = require( 'pfft-partial-webpack/webpack/development' );
+const css    = require( 'pfft-partial-css/webpack/development' );
+const common = require( './common' );
 
 
-const developmentConfig =
+const development =
 {
     entry :
     {
-        app    : ['react-hot-loader/patch'],
-        vendor : vendor
-    },
-
-    module :
-    {
-        rules :
-        [
-            {
-                test    : /\.js$/,
-                exclude : /node_modules/,
-
-                use :
-                [
-                    {
-                        loader  : 'babel-loader',
-                        options : { cacheDirectory : true }
-                    }
-                ]
-            }
-        ]
+        app : ['react-hot-loader/patch']
     }
-}
+};
 
 
-module.exports = merge( developmentConfig, cssConfig, webpackConfig );
+module.exports = merge( development, css, common, base );

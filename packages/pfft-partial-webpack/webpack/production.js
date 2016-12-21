@@ -1,18 +1,17 @@
-const webpack      = require( 'webpack' );
-const merge        = require( 'webpack-merge' );
-const paths        = require( '../config/paths' );
-const commonConfig = require( './common' );
+const webpack = require( 'webpack' );
+const merge   = require( 'webpack-merge' );
+const common  = require( './common' );
+const paths   = require( '../config/paths' );
 
 
-const productionConfig =
+const production =
 {
     plugins :
     [
-        new webpack.optimize.UglifyJsPlugin( {
-            compress : { warnings : false }
-        } )
+        new webpack.DefinePlugin( { 'process.env.NODE_ENV' : '"production"' } ),
+        new webpack.optimize.UglifyJsPlugin( { compress : { warnings : false } } )
     ]
 };
 
 
-module.exports = merge( productionConfig, commonConfig );
+module.exports = merge( production, common );

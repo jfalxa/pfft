@@ -1,10 +1,10 @@
-const webpack      = require( 'webpack' );
-const merge        = require( 'webpack-merge' );
-const server       = require( '../config/server' );
-const commonConfig = require( './common' );
+const webpack = require( 'webpack' );
+const merge   = require( 'webpack-merge' );
+const common  = require( './common' );
+const server  = require( '../config/server' );
 
 
-const developmentConfig =
+const development =
 {
     devServer : server,
 
@@ -31,10 +31,11 @@ const developmentConfig =
 
     plugins :
     [
+        new webpack.DefinePlugin( { 'process.env.NODE_ENV' : '"development"' } ),
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NamedModulesPlugin()
+        new webpack.NamedModulesPlugin(),
     ]
 };
 
 
-module.exports = merge( developmentConfig, commonConfig );
+module.exports = merge( development, common );

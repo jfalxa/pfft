@@ -9,7 +9,8 @@ coverage
 yarn.lock
 
 # build results
-dist
+public/js
+public/css
 
 # coverage data
 coverage
