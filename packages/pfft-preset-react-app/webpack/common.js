@@ -1,5 +1,5 @@
 const merge  = require( 'webpack-merge' );
-const images = require( 'pfft-partial-webpack/webpack/images' );
+const images = require( 'pfft-partial-css/webpack/images' );
 const vendor = require( '../config/vendor' );
 
 
