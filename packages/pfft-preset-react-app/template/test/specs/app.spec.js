@@ -1,18 +1,8 @@
-import main from 'lib';
+import test from 'ava';
+import App  from 'src/components/App';
 
 
-describe( 'Lib entry point', () =>
+test( 'App component', t =>
 {
-
-    it( 'should export a function', () =>
-    {
-        expect( main ).to.be.a( 'function' );
-    } );
-
-
-    it( 'should execute correctly', () =>
-    {
-        expect( main() ).to.be.true;
-    } );
-
+    t.pass( App() );
 } );

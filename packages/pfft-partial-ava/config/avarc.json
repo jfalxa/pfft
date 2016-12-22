@@ -1,0 +1,7 @@
+{
+    "ava" :
+    {
+        "babel"   : "inherit",
+        "require" : ["pfft-partial-ava/config/setup"]
+    }
+}
