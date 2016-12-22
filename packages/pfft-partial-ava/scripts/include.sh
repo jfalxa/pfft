@@ -5,3 +5,6 @@ AVARC="$PARTIAL/config/avarc.json"
 
 # merge ava config inside package.json
 cat package.json $AVARC | $json --merge > package.json
+
+
+cat package.json

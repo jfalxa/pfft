@@ -10,8 +10,5 @@ yarn add \
     redux-thunk \
     lodash
 
-sleep 1
-cat package.json
-
 # insert ava config inside package.json
 sh ./node_modules/pfft-partial-ava/scripts/include.sh
