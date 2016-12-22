@@ -4,4 +4,4 @@ json="$PARTIAL/node_modules/.bin/json"
 AVARC="$PARTIAL/config/avarc.json"
 
 # merge ava config inside package.json
-cat package.json $AVARC | $json --merge
+cat package.json $AVARC | $json --merge > package.json
