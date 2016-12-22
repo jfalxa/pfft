@@ -3,8 +3,10 @@ PARTIAL="./node_modules/pfft-partial-ava"
 json="$PARTIAL/node_modules/.bin/json"
 AVARC="$PARTIAL/config/avarc.json"
 
+echo '--------------------------------------------------------'
+pwd
+cat package.json
+echo '--------------------------------------------------------'
+
 # merge ava config inside package.json
 cat package.json $AVARC | $json --merge > package.json
-
-
-cat package.json
