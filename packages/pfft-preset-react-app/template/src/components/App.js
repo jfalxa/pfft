@@ -7,7 +7,9 @@ export default function App( props )
 {
     return (
 
-        <h1 className={ style.app }>Salut</h1>
+        <div className={ style.app }>
+            <h1>Salut</h1>
+        </div>
 
     );
 }
