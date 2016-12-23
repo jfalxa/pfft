@@ -1,0 +1,14 @@
+{
+  "name": "pfft-partial-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-react": "^6.16.0",
+    "enzyme": "^2.7.0",
+    "eslint-plugin-react": "^6.8.0",
+    "react-addons-test-utils": "^15.4.1",
+    "react-hot-loader": "next"
+  }
+}
