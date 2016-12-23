@@ -1,3 +1,7 @@
 {
-    "extends" : "./node_modules/pfft-preset-react-app/config/eslintrc.js"
+    "extends" :
+    [
+        "pfft-partial-eslint/config/eslintrc.js"
+        "pfft-partial-react/config/eslintrc.js"
+    ]
 }

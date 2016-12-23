@@ -2,7 +2,8 @@
 
 ## Scripts
 
-- `npm start` to start dev server
-- `npm run build` to compile JS and CSS to the `dist/` dir
-- `npm test` to run tests with mocha
-- `npm run lint` to lint your code with eslint and stylelint
+- `yarn start` to start dev server
+- `yarn build` to compile JS and CSS to the `public/` dir so you can deploy it
+- `yarn test` to run tests with ava
+- `yarn coverage` to run tests with coverage reports
+- `yarn run clean` to remove previous build results

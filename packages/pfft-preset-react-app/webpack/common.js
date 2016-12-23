@@ -1,6 +1,5 @@
 const merge  = require( 'webpack-merge' );
 const images = require( 'pfft-partial-css/webpack/images' );
-const vendor = require( '../config/vendor' );
 
 
 const common =
@@ -15,25 +14,6 @@ const common =
             'react-redux',
             'redux',
             'redux-thunk'
-        ]
-    },
-
-    module :
-    {
-        rules :
-        [
-            {
-                test    : /\.js$/,
-                exclude : /node_modules/,
-
-                use :
-                [
-                    {
-                        loader  : 'babel-loader',
-                        options : { cacheDirectory : true }
-                    }
-                ]
-            }
         ]
     }
 };
