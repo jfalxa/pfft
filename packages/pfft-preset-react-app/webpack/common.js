@@ -7,7 +7,15 @@ const common =
 {
     entry :
     {
-        vendor : vendor
+        vendor :
+        [
+            'react',
+            'react-dom',
+            'react-router',
+            'react-redux',
+            'redux',
+            'redux-thunk'
+        ]
     },
 
     module :
