@@ -1,3 +1,7 @@
 {
-    "use" : ["precss", "autoprefixer"]
+    "use" :
+    [
+        "postcss-import",
+        "postcss-cssnext"
+    ]
 }

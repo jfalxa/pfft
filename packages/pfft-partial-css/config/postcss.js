@@ -1,12 +1,12 @@
-const precss       = require( 'precss' );
-const autoprefixer = require( 'autoprefixer' );
+const cssImport = require( 'postcss-import' );
+const cssnext   = require( 'postcss-cssnext' );
 
 
 module.exports =
 {
     plugins :
     [
-        precss,
-        autoprefixer
+        cssImport,
+        cssnext
     ]
 };
