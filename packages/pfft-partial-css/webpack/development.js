@@ -1,8 +1,8 @@
-const webpack = require( 'webpack' );
-const precss  = require( 'precss' );
+const merge  = require( 'webpack-merge' );
+const common = require( './common' );
 
 
-module.exports =
+const development =
 {
     module :
     {
@@ -31,10 +31,7 @@ module.exports =
         ]
     },
 
-    plugins :
-    [
-        new webpack.LoaderOptionsPlugin( {
-            options : { postcss : [precss] }
-        } )
-    ]
 };
+
+
+module.exports = merge( development, common );

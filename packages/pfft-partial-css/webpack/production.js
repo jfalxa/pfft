@@ -1,11 +1,9 @@
-const webpack           = require( 'webpack' );
-const precss            = require( 'precss' );
-const cssnano           = require( 'cssnano' );
-const autoprefixer      = require( 'autoprefixer' );
+const merge             = require( 'webpack-merge' );
 const ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
+const common            = require( './common' );
 
 
-module.exports =
+const production =
 {
     module :
     {
@@ -41,9 +39,9 @@ module.exports =
 
     plugins :
     [
-        new ExtractTextPlugin( '../css/style.css' ),
-        new webpack.LoaderOptionsPlugin( {
-            options : { postcss : [precss, autoprefixer] }
-        } )
+        new ExtractTextPlugin( '../css/style.css' )
     ]
 };
+
+
+module.exports = merge( production, common );
