@@ -2,7 +2,7 @@
 build="sh ./node_modules/pfft-partial-babel/scripts/build.sh"
 css="sh ./node_modules/pfft-partial-css/scripts/css.sh"
 clean="sh ./node_modules/pfft-preset-react-lib/scripts/clean.sh"
-POSTCSS_CONFIG="./node_modules/pfft-partial-css/config/postcss.js"
+POSTCSS_CONFIG="./node_modules/pfft-partial-css/config/postcss-cli.json"
 
 # babel options
 BABEL_OPTIONS="src --out-dir lib"

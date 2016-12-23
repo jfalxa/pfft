@@ -1,0 +1,6 @@
+$blue: #00F;
+
+.my-component
+{
+    color: $blue;
+}

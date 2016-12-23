@@ -1,5 +1,8 @@
 const { configure } = require( '@kadira/storybook' );
 
+// import lib css in storybook
+require( '../../../src/styles/index.css' );
+
 
 function loadStories()
 {

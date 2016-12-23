@@ -9,7 +9,9 @@ export default class MyComponent extends React.Component
 
         return (
 
-            <div onClick={ onClick }>MyComponent</div>
+            <div className="my-component" onClick={ onClick }>
+                MyComponentContents
+            </div>
 
         );
     }
