@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-lib",
-  "version": "0.11.1",
+  "version": "0.14.0",
   "main": "index.js",
   "license": "MIT",
   "bin": {
@@ -9,8 +9,8 @@
   "dependencies": {
     "@kadira/storybook": "^2.35.1",
     "pfft-partial-ava": "^0.11.1",
-    "pfft-partial-babel": "^0.5.0",
-    "pfft-partial-css": "^0.7.0",
+    "pfft-partial-babel": "^0.14.0",
+    "pfft-partial-css": "^0.14.0",
     "pfft-partial-eslint": "^0.13.0",
     "pfft-partial-react": "^0.12.0",
     "pfft-utils": "^0.4.3"
