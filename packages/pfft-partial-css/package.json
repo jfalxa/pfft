@@ -7,9 +7,11 @@
     "autoprefixer": "^6.5.4",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "2.0.0-beta.4",
+    "postcss-cli": "^2.6.0",
     "postcss-loader": "^1.2.1",
     "precss": "^1.4.0",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7"
+    "url-loader": "^0.5.7",
+    "webpack-merge": "^2.0.0"
   }
 }

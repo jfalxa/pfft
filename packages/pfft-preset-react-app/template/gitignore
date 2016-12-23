@@ -12,6 +12,3 @@ yarn.lock
 # build results
 public/js
 public/css
-
-# coverage data
-coverage

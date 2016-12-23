@@ -1,9 +1,10 @@
-import { configure } from '@kadira/storybook';
+const { configure } = require( '@kadira/storybook' );
 
 
 function loadStories()
 {
-    require( '../stories/index.js' );
+    // go back to the root folder of the project to load stories
+    require( '../../../stories/index.js' );
 }
 
 
