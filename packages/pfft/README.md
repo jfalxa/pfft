@@ -8,7 +8,7 @@ That's how you pronounce it: https://www.youtube.com/watch?v=BhLL8C3OC5M&t=44
 1. Install [yarn](https://yarnpkg.com/)
 2. `yarn global add pfft`
 
-`yarn` is your friend, `npm` not really.
+`yarn` is your friend. `npm` as well but eh, slow.
 
 
 # Usage
