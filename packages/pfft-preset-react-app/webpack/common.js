@@ -1,8 +1,4 @@
-const merge  = require( 'webpack-merge' );
-const images = require( 'pfft-partial-css/webpack/images' );
-
-
-const common =
+module.exports =
 {
     entry :
     {
@@ -17,6 +13,3 @@ const common =
         ]
     }
 };
-
-
-module.exports = merge( images, common );
