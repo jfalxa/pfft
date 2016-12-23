@@ -5,9 +5,11 @@ export default class MyComponent extends React.Component
 {
     render()
     {
+        const { onClick } = this.props;
+
         return (
 
-            <div>MyComponent</div>
+            <div onClick={ onClick }>MyComponent</div>
 
         );
     }

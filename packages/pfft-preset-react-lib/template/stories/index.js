@@ -7,5 +7,5 @@ import MyComponent from 'src/MyComponent';
 storiesOf( 'MyComponent', module )
     .add( 'example', () =>
     (
-        <MyComponent />
+        <MyComponent onClick={ action( 'clicked' ) } />
     ) );
