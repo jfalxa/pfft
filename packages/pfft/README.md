@@ -29,7 +29,7 @@ When you don't have that many projects, it's not that bad. But when you're tryin
 
 That's where `pfft` comes in.
 
-It's main goal is to centralize generic boilerplate code in npm packages so it becomes easier to share and update. It hides away most of the complexity of build config and other helpful tools so you can focus on actually coding. In the meantime, it gives you the ability to update your configs in only one place and share it between many projects so you won't end up maintaining five thousand parallel configs that are actually doing pretty much the same thing.
+Its main goal is to centralize generic boilerplate code in npm packages so it becomes easier to share and update. It hides away most of the complexity of build config and other helpful tools so you can focus on actually coding. In the meantime, it gives you the ability to update your configs in only one place and share it between many projects so you won't end up maintaining five thousand parallel configs that are actually doing pretty much the same thing.
 
 
 ## Building a preset
@@ -46,7 +46,7 @@ If you want to start your app with some code already available, create a `templa
 A preset needs a `scripts` folder in its root. You also have to put and `init.sh` script that contains any commands you want to run when initializing your app. Right now, you can only use `.sh` scripts there, anything else will be ignored.
 
 ### Scripts bin
-The `pfft-utils` package has a tool called `proxy-script` that creates a cli tool that executes sh scripts from the preset module. You'll have to create a js file that uses this function (first arg is the preset name, the other one is always `process.argv`) and make this file a binary in your package.json. It makes your app's package.json scripts prettier as you'll only see something like `"build": "react-app build"` instead of `"build": "sh ./node_modules/pfft-preset-react-app/scripts/build.sh"`. Please look at `pfft-preset-react-app/config/scripts.js` and its package.json for a working example.
+The `pfft-utils` package has a tool called `proxy-script` that creates a cli tool that executes sh scripts from the preset module. You'll have to create a js file that uses this function (first arg is the preset name, the other one is always `process.argv`) and make this file a binary in your package.json. It makes your final app's package.json scripts prettier as you'll only see something like `"build": "react-app build"` instead of `"build": "sh ./node_modules/pfft-preset-react-app/scripts/build.sh"`. Please look at `pfft-preset-react-app/index.js` and its package.json for a working example.
 
 ### Partials
 Partials are not mandatory and can have any name you want, they're just npm packages. They can help you share config and scripts between a few presets so you don't have to repeat yourself too much.
