@@ -8,7 +8,7 @@ POSTCSS_CONFIG="./node_modules/pfft-partial-css/config/postcss-cli.json"
 BABEL_OPTIONS="src --out-dir lib"
 
 # postcss options
-POSTCSS_OPTIONS="--config $POSTCSS_CONFIG --output lib/_style.css src/styles/index.css"
+POSTCSS_OPTIONS="--config $POSTCSS_CONFIG --output lib/_style.css css/index.css"
 
 # clean output folder
 $clean

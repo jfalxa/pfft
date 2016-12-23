@@ -1,6 +1,6 @@
 import React from 'react';
 
-import style from 'src/styles/components/App.css';
+import style from 'css/components/App.css';
 
 
 export default function App( props )
