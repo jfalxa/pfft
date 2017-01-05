@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "react-app": "./index.js"
+    "react-app": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
     "pfft-partial-ava": "^0.11.1",

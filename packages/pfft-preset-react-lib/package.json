@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "react-lib": "./index.js"
+    "react-lib": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
     "@kadira/storybook": "^2.35.1",
