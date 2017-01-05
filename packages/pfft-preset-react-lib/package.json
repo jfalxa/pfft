@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-lib",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "main": "index.js",
   "license": "MIT",
   "bin": {
@@ -13,6 +13,6 @@
     "pfft-partial-css": "^0.15.1",
     "pfft-partial-eslint": "^0.13.0",
     "pfft-partial-react": "^0.12.0",
-    "pfft-utils": "^0.18.0"
+    "pfft-utils": "^0.18.1"
   }
 }
