@@ -1,10 +1,7 @@
-#/usr/bin/env node
-const proxyScripts = require( './lib/proxy-scripts' );
-
-// get bin name
-const packagePath = require( 'path' ).resolve( 'package.json' );
-const { name }    = require( packagePath );
-const binName     = name.replace( 'pfft-preset-', '' );
+#!/usr/bin/env node
+const findPreset   = require( './lib/findPreset' );
+const proxyScripts = require( './lib/proxyScripts' );
 
 // proxy the package scripts
-module.exports = proxyScripts( binName, process.argv );
+const name     = findPreset().replace( 'pfft-preset-', '' );
+module.exports = proxyScripts( name, process.argv );
