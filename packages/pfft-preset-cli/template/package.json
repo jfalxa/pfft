@@ -1,0 +1,5 @@
+{
+    "bin": {
+        "cli": "./lib/index.js"
+    }
+}

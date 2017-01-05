@@ -1,10 +1,9 @@
-const path        = require( 'path' );
-const spawn       = require( 'cross-spawn' );
-const programm    = require( 'commander' );
-const { version } = require( './package.json' );
+const path     = require( 'path' );
+const spawn    = require( 'cross-spawn' );
+const programm = require( 'commander' );
 
 
-programm.version( version )
+programm.version( '0.17.3' )
     .description( 'run scripts from a preset' )
     .arguments( '<script> [options...]' );
 
