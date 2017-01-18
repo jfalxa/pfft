@@ -17,7 +17,7 @@ module.exports = function init( preset, target )
     }
 
     // install preset to get base template
-    spawn( 'yarn', ['add', presetModule] );
+    spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
@@ -26,7 +26,8 @@ module.exports = function init( preset, target )
     // actually init yarn, merging it with the template package.json
     spawn( 'yarn', ['init', '-y'] );
 
-    // re-add the preset but save it as a dev dependency
+    // re-add the preset as a dev dependency as it could have been removed by
+    // a pre-existing package.json in the template folder
     spawn( 'yarn', ['add', '--dev', presetModule] );
 
     // execute the init script of the preset
