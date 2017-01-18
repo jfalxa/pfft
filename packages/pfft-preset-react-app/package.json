@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.18.4",
+  "version": "0.18.6",
   "main": "index.js",
   "license": "MIT",
   "bin": {
@@ -9,9 +9,9 @@
   "dependencies": {
     "pfft-partial-ava": "^0.18.4",
     "pfft-partial-babel": "^0.14.0",
-    "pfft-partial-css": "^0.15.1",
+    "pfft-partial-css": "^0.18.6",
     "pfft-partial-eslint": "^0.13.0",
-    "pfft-partial-react": "^0.12.0",
+    "pfft-partial-react": "^0.18.6",
     "pfft-partial-webpack": "^0.18.4",
     "pfft-utils": "^0.18.1",
     "webpack-merge": "^2.4.0"
