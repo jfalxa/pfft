@@ -14,6 +14,6 @@
     "pfft-partial-react": "^0.12.0",
     "pfft-partial-webpack": "^0.7.0",
     "pfft-utils": "^0.18.1",
-    "webpack-merge": "^1.1.1"
+    "webpack-merge": "^2.4.0"
   }
 }
