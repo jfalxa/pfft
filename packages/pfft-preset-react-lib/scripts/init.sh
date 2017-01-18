@@ -2,8 +2,6 @@
 
 # add react and friends
 yarn add \
-    react \
-    react-dom \
     lodash
 
 # insert ava config inside package.json
