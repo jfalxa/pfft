@@ -2,6 +2,7 @@
 
 # add react and friends
 yarn add \
+    styled-components \
     lodash
 
 # insert ava config inside package.json

@@ -1,11 +1,11 @@
 import React                 from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 
-import MyComponent from 'src/MyComponent';
+import MyInput from 'src/MyInput';
 
 
-storiesOf( 'MyComponent', module )
+storiesOf( 'MyInput', module )
     .add( 'example', () =>
     (
-        <MyComponent onClick={ action( 'clicked' ) } />
+        <MyInput onChange={ action( 'Changed input value.' ) } />
     ) );
