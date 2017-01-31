@@ -1,6 +1,6 @@
 import React                    from 'react';
 import { Provider }             from 'react-redux';
-import { BrowserRouter, Match } from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import App from 'src/components/App';
 
@@ -11,7 +11,7 @@ export default function RootProd( { store } )
 
         <Provider store={ store }>
             <BrowserRouter>
-                <Match pattern="/" component={ App } />
+                <Route pattern="/" component={ App } />
             </BrowserRouter>
         </Provider>
 

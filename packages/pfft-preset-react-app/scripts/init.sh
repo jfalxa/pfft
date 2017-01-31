@@ -3,7 +3,7 @@
 # add the dependencies with their latest versions
 yarn add \
     styled-components \
-    react-router@next \
+    react-router-dom@next \
     react-redux \
     redux \
     redux-thunk \
