@@ -5,7 +5,7 @@
   "author": "jfalxa <jfalxa.sta@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "get-latest": "lerna exec -- ncu -u"
+    "get-latest": "lerna exec -- ncu -a"
   },
   "devDependencies": {
     "lerna": "2.0.0-beta.32",

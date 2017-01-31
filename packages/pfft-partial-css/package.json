@@ -8,10 +8,10 @@
     "extract-text-webpack-plugin": "2.0.0-beta.4",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
-    "postcss-import": "^9.0.0",
-    "postcss-loader": "^1.2.1",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack-merge": "^2.0.0"
+    "webpack-merge": "^2.6.1"
   }
 }
