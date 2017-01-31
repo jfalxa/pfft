@@ -5,7 +5,7 @@ import { BrowserRouter, Match } from 'react-router';
 import App from 'src/components/App';
 
 
-export default function Root( { store } )
+export default function RootProd( { store } )
 {
     return (
 
@@ -14,5 +14,6 @@ export default function Root( { store } )
                 <Match pattern="/" component={ App } />
             </BrowserRouter>
         </Provider>
+
     );
 }

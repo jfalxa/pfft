@@ -1,15 +1,18 @@
-import React from 'react';
+import React  from 'react';
+import styled from 'styled-components';
 
-import style from 'css/App.css';
 
+const Container = styled.div`
+    color: #00F;
+`;
 
 export default function App( props )
 {
     return (
 
-        <div className={ style.app }>
+        <Container>
             <h1>Salut</h1>
-        </div>
+        </Container>
 
     );
 }

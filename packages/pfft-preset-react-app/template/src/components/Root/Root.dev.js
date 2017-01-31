@@ -1,15 +1,16 @@
 import React            from 'react';
 import { AppContainer } from 'react-hot-loader';
 
-import RootBase from './Root.prod';
+import Root from './Root.prod';
 
 
-export default function Root( { store } )
+export default function RootDev( { store } )
 {
     return (
 
         <AppContainer>
-            <RootBase store={ store } />
+            <Root store={ store } />
         </AppContainer>
+
     );
 }
