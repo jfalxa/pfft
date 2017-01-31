@@ -2,6 +2,7 @@
 
 # add the dependencies with their latest versions
 yarn add \
+    styled-components \
     react-router@next \
     react-redux \
     redux \
