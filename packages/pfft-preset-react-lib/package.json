@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-lib",
-  "version": "0.20.1",
+  "version": "0.20.4",
   "main": "index.js",
   "license": "MIT",
   "bin": {
