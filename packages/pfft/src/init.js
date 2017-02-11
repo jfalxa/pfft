@@ -22,6 +22,7 @@ module.exports = function init( preset, target )
     // copy the preset template to the project
     spawn( 'cp', ['-a', `${ presetPath }/template/.`, './'] );
     spawn( 'mv', ['gitignore', '.gitignore'] );
+    spawn( 'mv', ['npmignore', '.npmignore'] );
 
     // actually init yarn, merging it with the template package.json
     spawn( 'yarn', ['init', '-y'] );
