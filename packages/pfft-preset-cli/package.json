@@ -1,15 +1,15 @@
 {
   "name": "pfft-preset-cli",
-  "version": "0.20.1",
+  "version": "0.20.5",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "cli": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
-    "pfft-partial-ava": "^0.20.1",
-    "pfft-partial-babel": "^0.20.1",
-    "pfft-partial-eslint": "^0.20.1",
+    "pfft-partial-ava": "^0.20.5",
+    "pfft-partial-babel": "^0.20.5",
+    "pfft-partial-eslint": "^0.20.5",
     "pfft-utils": "^0.18.1"
   }
 }
