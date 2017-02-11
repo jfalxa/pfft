@@ -8,7 +8,7 @@
     "get-latest": "lerna exec -- ncu -a"
   },
   "devDependencies": {
-    "lerna": "2.0.0-beta.32",
+    "lerna": "2.0.0-beta.37",
     "npm-check-updates": "^2.8.9"
   }
 }
