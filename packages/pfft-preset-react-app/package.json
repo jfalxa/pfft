@@ -1,18 +1,18 @@
 {
   "name": "pfft-preset-react-app",
-  "version": "0.20.5",
+  "version": "0.20.6",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "react-app": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
-    "pfft-partial-ava": "^0.20.5",
-    "pfft-partial-babel": "^0.20.5",
-    "pfft-partial-eslint": "^0.20.5",
-    "pfft-partial-react": "^0.20.1",
-    "pfft-partial-webpack": "^0.20.5",
-    "pfft-utils": "^0.18.1",
+    "pfft-partial-ava": "^0.20.6",
+    "pfft-partial-babel": "^0.20.6",
+    "pfft-partial-eslint": "^0.20.6",
+    "pfft-partial-react": "^0.20.6",
+    "pfft-partial-webpack": "^0.20.6",
+    "pfft-utils": "^0.20.6",
     "webpack-merge": "^4.1.0"
   }
 }
