@@ -1,10 +1,9 @@
 .git
-css
 src
 stories
+docs
 test
 .babelrc
 .eslintrc
 yarn.lock
 node_modules
-

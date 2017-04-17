@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "babel-loader": "^6.2.10",
-    "babel-preset-react": "^6.22.0",
-    "enzyme": "^2.7.1",
-    "eslint-plugin-react": "^6.9.0",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "babel-loader": "^6.4.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "eslint-plugin-react": "^6.10.3",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
     "react-hot-loader": "next"
   }
 }
