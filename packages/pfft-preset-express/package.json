@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "express-server": "../pfft-utils/run-scripts.js"
+    "express": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
     "nodemon": "^1.11.0",
