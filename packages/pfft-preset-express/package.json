@@ -1,0 +1,15 @@
+{
+  "name": "pfft-preset-cli",
+  "version": "0.20.6",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "express-server": "../pfft-utils/run-scripts.js"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "pfft-partial-ava": "^0.20.6",
+    "pfft-partial-eslint": "^0.20.6",
+    "pfft-utils": "^0.20.6"
+  }
+}
