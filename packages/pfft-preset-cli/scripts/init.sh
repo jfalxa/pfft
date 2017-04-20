@@ -5,5 +5,5 @@ yarn add \
     commander \
     lodash
 
-# insert ava config inside package.json
+# insert ava config in package.json
 sh ./node_modules/pfft-partial-ava/scripts/include.sh
