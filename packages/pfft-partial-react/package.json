@@ -8,6 +8,7 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^2.8.2",
     "eslint-plugin-react": "^7.0.1",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.5.4",
