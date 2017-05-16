@@ -1,0 +1,15 @@
+{
+  "name": "pfft-preset-lib",
+  "version": "0.21.5",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "lib": "../pfft-utils/run-scripts.js"
+  },
+  "dependencies": {
+    "pfft-partial-ava": "^0.21.5",
+    "pfft-partial-babel": "^0.20.6",
+    "pfft-partial-eslint": "^0.20.6",
+    "pfft-utils": "^0.20.6"
+  }
+}
