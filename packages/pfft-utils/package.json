@@ -1,8 +1,9 @@
 {
   "name": "pfft-utils",
-  "version": "0.20.6",
+  "version": "0.22.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": "jfalxa/pfft",
   "dependencies": {
     "commander": "^2.9.0",
     "cross-spawn": "^5.1.0"

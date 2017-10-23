@@ -1,15 +1,16 @@
 {
   "name": "pfft-preset-express",
-  "version": "0.21.5",
+  "version": "0.22.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": "jfalxa/pfft",
   "bin": {
     "express": "../pfft-utils/run-scripts.js"
   },
   "dependencies": {
     "nodemon": "^1.11.0",
-    "pfft-partial-ava": "^0.21.5",
-    "pfft-partial-eslint": "^0.20.6",
-    "pfft-utils": "^0.20.6"
+    "pfft-partial-ava": "^0.22.1",
+    "pfft-partial-eslint": "^0.22.1",
+    "pfft-utils": "^0.22.1"
   }
 }

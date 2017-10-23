@@ -1,8 +1,9 @@
 {
   "name": "pfft-partial-eslint",
-  "version": "0.20.6",
+  "version": "0.22.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": "jfalxa/pfft",
   "dependencies": {
     "babel-eslint": "^7.2.2",
     "eslint": "^3.19.0"

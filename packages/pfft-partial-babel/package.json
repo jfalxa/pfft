@@ -1,8 +1,9 @@
 {
   "name": "pfft-partial-babel",
-  "version": "0.20.6",
+  "version": "0.22.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": "jfalxa/pfft",
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",

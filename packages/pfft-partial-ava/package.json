@@ -1,8 +1,9 @@
 {
   "name": "pfft-partial-ava",
-  "version": "0.21.5",
+  "version": "0.22.1",
   "main": "index.js",
   "license": "MIT",
+  "repository": "jfalxa/pfft",
   "dependencies": {
     "ava": "^0.19.1",
     "babel-plugin-istanbul": "4.1.3",
