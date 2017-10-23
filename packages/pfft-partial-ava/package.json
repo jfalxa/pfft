@@ -1,6 +1,6 @@
 {
   "name": "pfft-partial-ava",
-  "version": "0.22.1",
+  "version": "0.22.2",
   "main": "index.js",
   "license": "MIT",
   "repository": "jfalxa/pfft",

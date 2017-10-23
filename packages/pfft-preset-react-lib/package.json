@@ -1,6 +1,6 @@
 {
   "name": "pfft-preset-react-lib",
-  "version": "0.22.1",
+  "version": "0.22.2",
   "main": "index.js",
   "license": "MIT",
   "repository": "jfalxa/pfft",
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "@kadira/storybook": "^2.35.3",
-    "pfft-partial-ava": "^0.22.1",
-    "pfft-partial-babel": "^0.22.1",
-    "pfft-partial-eslint": "^0.22.1",
-    "pfft-partial-react": "^0.22.1",
-    "pfft-utils": "^0.22.1"
+    "pfft-partial-ava": "^0.22.2",
+    "pfft-partial-babel": "^0.22.2",
+    "pfft-partial-eslint": "^0.22.2",
+    "pfft-partial-react": "^0.22.2",
+    "pfft-utils": "^0.22.2"
   }
 }
